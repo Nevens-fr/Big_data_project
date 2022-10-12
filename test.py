@@ -9,10 +9,9 @@ auth = tweepy.OAuth2BearerHandler("AAAAAAAAAAAAAAAAAAAAAOxrhQEAAAAAJfwkToj3MYyq4
 
 api = tweepy.API(auth)
 
+
+#recherche des 200 derniers tweets de l'user donné et affichage des 3 derniers
 userID= "Nivvvvvvees"
-#public_tweets = api.home_timeline()
-#for tweet in public_tweets:
-#    print(tweet.text)
 
 tweets = api.user_timeline(screen_name=userID, 
                            # 200 is the maximum allowed count
@@ -28,3 +27,5 @@ for info in tweets[:3]:
      print(info.created_at)
      print(info.full_text)
      print("\n")
+
+
