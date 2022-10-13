@@ -1,3 +1,5 @@
-stock les données dans mongoDB
+stock les données dans mongoDB (skinner ? local nos machines ?)
+sujet gun control ok ?
+prendre des tweets tous les jours juqu'a soutenance ok ? pour faire un panel sur plusieurs mois ?
 évite les doublons (utiliser les dates)
 trouver les données à afficher / traitement des données 
