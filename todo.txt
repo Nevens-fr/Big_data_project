@@ -1,0 +1,3 @@
+stock les données dans mongoDB
+évite les doublons (utiliser les dates)
+trouver les données à afficher / traitement des données 
