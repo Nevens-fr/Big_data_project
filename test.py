@@ -20,6 +20,7 @@ api = tweepy.API(auth)
 
 #recherche des 200 derniers tweets de l'user donné et affichage des 3 derniers
 #userID= "DasNotMeSorry"
+"""
 userID= "_Petit_Jean_"
 
 tweets = api.user_timeline(screen_name=userID, 
@@ -30,7 +31,7 @@ tweets = api.user_timeline(screen_name=userID,
                            # otherwise only the first 140 words are extracted
                            tweet_mode = 'extended'
                            )
-"""
+
 for info in tweets[:len(tweets)]:
      print("ID: {}".format(info.id))
      print(info.created_at)
