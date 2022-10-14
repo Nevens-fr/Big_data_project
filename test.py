@@ -2,7 +2,7 @@ import tweepy
 import re
 import textblob
 import codecs
-from textblob_fr import PatternTagger, PatternAnalyzer
+#from textblob_fr import PatternTagger, PatternAnalyzer
 
 auth = tweepy.OAuth1UserHandler(
    "i4ELbXGMEBNE97HB6mrmNuI91", "tWjVFA9yzSzXroZwMSsnrQBE3FQqWV1lr4RmMjSS6vUNSVwBKv", "1572835833345986563-zBLKPbqewLfVIBvTIXem6RI7cOcmQr", "VDZkOJf3e0yUC9SJvI71MS190L9GOSNFuUu5LnbMqPVgs"
@@ -60,6 +60,9 @@ else:
 f = codecs.open("resultats.txt", "w",  "utf-8")
 
 i = 0
+
+#affichage d'un tweet entier
+#print(fetched_tweets[0].__str__())
 
 while i < len(fetched_tweets):
 

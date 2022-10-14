@@ -1,3 +1,46 @@
+global polarity0.75 subjectivity 0.95 tweet id : 1580885609501306881
+https://twitter.com/4458621/status/1580885609501306881
+Created at : 2022-10-14 11:37:55+00:00
+
+Here’s hoping they’re successful. We need #GunControl. https://t.co/3yfWStEY8K
+##################################################################################################
+global polarity0.0 subjectivity 0.0 tweet id : 1580884139221209088
+https://twitter.com/26422223/status/1580884139221209088
+Created at : 2022-10-14 11:32:04+00:00
+
+Prayers for Raleigh, NC 😢
+
+#PrayForRaleigh #Raleigh #NorthCarolina #RaleighStrong #PrayersForRaleigh #EndGunViolence #EnoughIsEnough #NeverAgain #GunControlNow #GunControl
+##################################################################################################
+global polarity0.0 subjectivity 0.0 tweet id : 1580882983870877696
+https://twitter.com/812560069/status/1580882983870877696
+Created at : 2022-10-14 11:27:29+00:00
+
+No way to prevent this... #guncontrol https://t.co/9zNKj5Av2H
+##################################################################################################
+global polarity-0.016666666666666677 subjectivity 0.3222222222222222 tweet id : 1580882713930002432
+https://twitter.com/53086663/status/1580882713930002432
+Created at : 2022-10-14 11:26:25+00:00
+
+NYT:
+"5 Killed, Including Off-Duty Officer, as Gunman Strikes a Raleigh Neighborhood...Another young man stalking civilians with a powerful weapon. Another quiet American neighborhood forced to digest the incomprehensible."
+
+#guncontrol
+##################################################################################################
+global polarity-0.3212121212121212 subjectivity 0.5515151515151515 tweet id : 1580877261489983490
+https://twitter.com/192216034/status/1580877261489983490
+Created at : 2022-10-14 11:04:45+00:00
+
+"The officers were shot during an especially violent week for police in the United States."
+
+@potus just another reason we need severe #guncontrol. We are in a new generation with severe violence, mental illness &amp; abuse running rampant. #NOGUNSUSA https://t.co/JIS9tKNluZ
+##################################################################################################
+global polarity0.25 subjectivity 0.3 tweet id : 1580871584864440321
+https://twitter.com/55414986/status/1580871584864440321
+Created at : 2022-10-14 10:42:11+00:00
+
+#GunControlNow #guncontrol #Vote Too many mass shootings.  Let’s do something.  Vote blue.
+##################################################################################################
 global polarity-0.5777777777777778 subjectivity 0.6444444444444445 tweet id : 1580852194219524097
 https://twitter.com/1323617730/status/1580852194219524097
 Created at : 2022-10-14 09:25:08+00:00
@@ -691,47 +734,4 @@ Created at : 2022-10-13 14:01:30+00:00
 
 @CT_STATE_POLICE Son of a police officer myself : I asked my Dad once “why retire!?” and he answered “because the bad guys have better more dangerous guns than us now…”
 #GunControl
-##################################################################################################
-global polarity0.0 subjectivity 0.0 tweet id : 1580513874784444416
-https://twitter.com/1438747527931518978/status/1580513874784444416
-Created at : 2022-10-13 11:00:46+00:00
-
-Now both my hometown (Buffalo) and my college's town (Berkeley) had mass shootings. And my sibling lives in a state where road rage shootings have quadrupled. This is the America you've created, anti-gun controllers. America riddled with holes where lives used to be. #GunControl
-##################################################################################################
-global polarity-0.4 subjectivity 0.825 tweet id : 1580511393652314112
-https://twitter.com/148867097/status/1580511393652314112
-Created at : 2022-10-13 10:50:55+00:00
-
-Democrats walk out of meeting over (totally phony) claims of bigotry and hate speech
-
-#guncontrol
-
-https://t.co/WTUYFLPrnn
-##################################################################################################
-global polarity0.0 subjectivity 0.0 tweet id : 1580496920178724869
-https://twitter.com/855600964644089856/status/1580496920178724869
-Created at : 2022-10-13 09:53:24+00:00
-
-I’m still waiting for Vermont to be the Hellscape @Everytown @MomsDemand @igorvolsky keep warning me will happen. #2A #gunsense #guncontrol https://t.co/NiA3SNx2ZN
-##################################################################################################
-global polarity-0.23611111111111116 subjectivity 0.29444444444444445 tweet id : 1580496117631897600
-https://twitter.com/1335021869372674048/status/1580496117631897600
-Created at : 2022-10-13 09:50:13+00:00
-
-The failure of ancient #guncontrol:
-1 Sam 13:19b-20, 14:14a “Otherwise, the Hebrews will make swords or spears.” So all the Israelites went to the Philistines to sharpen their plows, mattocks, axes, and sickles.... Jonathan and his armor-bearer struck down about twenty men
-##################################################################################################
-global polarity0.0 subjectivity 0.0 tweet id : 1580463401712877572
-https://twitter.com/1446479694036029445/status/1580463401712877572
-Created at : 2022-10-13 07:40:13+00:00
-
-#DoSomething - sign the @everytown pledge to prevent senseless gun violence: https://t.co/ZxdrdqI9gj 
-
-#YouAreNotAlone #TakeAction #BeTheChange #GunControl #EndGunViolence #Vote @MomsDemand
-##################################################################################################
-global polarity0.8 subjectivity 0.4 tweet id : 1580457835825008640
-https://twitter.com/2389336800/status/1580457835825008640
-Created at : 2022-10-13 07:18:06+00:00
-
-‘We Told the Truth’: Sandy Hook Families Win $1 Billion From Alex Jones https://t.co/xcMWqK8qLe #AlexJones #AlexJonesTrial #ConspiracyTheorist #ConspiracyTheories #SandyHook #SandyHookFamilies #justice #GunControl #Trump #TrumpCrimeFamily
 ##################################################################################################

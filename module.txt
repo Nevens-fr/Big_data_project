@@ -3,3 +3,4 @@ modules à intaller
 import tweepy
 import textblob
 import TextBlob-fr
+import pymongo
