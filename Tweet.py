@@ -23,5 +23,22 @@ class Tweet:
             "user" : self.user ,
         }
 
+    ##
+    # Recrée la classe depuis des données json lues
+    # data : une chaîne de caractère json
+    #TODO user passer dans un read data aussi
+    def readData(self, data):
+        for key, value in data.items():
+            if key == "id": self.id = value
+            elif key == "text" : self.text = value
+            elif key == "full_text" : self.full_text = value
+            elif key == "created_at" : self.created_at = value
+            elif key == "polarity" : self.polarity = value
+            elif key == "subjectivity" : self.subjectivity = value
+            elif key == "user" : self.user = value
+"""test
 t = Tweet()
 print(t.jsonified())
+print("")
+t.readData(t.jsonified())
+print(t.jsonified())"""
