@@ -44,7 +44,7 @@ mot="#guncontrol"
 #mot ="#GPExplorer"
 q = (mot)
 q +=  " -filter:retweets"
-count = 100
+count = 200
 fetched_tweets = api.search_tweets(q, count = count,lang="en",tweet_mode = 'extended')
 
 
@@ -56,6 +56,7 @@ if(None == re.search(mot+'$', fetched_tweets[0].full_text)):
 else:
    print("Ne fini pas par quoi")
 """
+print(len(fetched_tweets))
 
 f = codecs.open("resultats.txt", "w",  "utf-8")
 
@@ -72,7 +73,8 @@ while i < len(fetched_tweets):
    #fr version
    #blob = textblob.TextBlob(text,pos_tagger=PatternTagger(), analyzer=PatternAnalyzer())
 
-
+   #ecriture de l'objet
+   #f.write(fetched_tweets[i].__str__())
    f.write("global polarity" + str(blob.polarity) + " subjectivity " + str(blob.subjectivity) + " tweet id : " + str(fetched_tweets[i].id) +"\n")
    f.write("https://twitter.com/"+str(fetched_tweets[i].user.id) +"/status/"+str(fetched_tweets[i].id) + "\n")
    f.write("Created at : " + str(fetched_tweets[i].created_at) + "\n")
