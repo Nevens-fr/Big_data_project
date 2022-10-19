@@ -2,6 +2,10 @@ import tweepy
 import re
 import textblob
 import codecs
+import Tweet
+import mongo
+
+mongo.init_co()
 #from textblob_fr import PatternTagger, PatternAnalyzer
 
 auth = tweepy.OAuth1UserHandler(
@@ -45,7 +49,7 @@ mot="#guncontrol"
 q = (mot)
 q +=  " -filter:retweets"
 count = 200
-fetched_tweets = api.search_tweets(q, count = count,lang="en",tweet_mode = 'extended')
+fetched_tweets = api.search_tweets(q, count = count,lang="en",tweet_mode = 'extended',result_type="recent")
 
 
 """regarde si un mot est a la fin du tweet
@@ -87,6 +91,23 @@ while i < len(fetched_tweets):
 
 f.close()
 
+f = codecs.open("resultats3.txt", "w",  "utf-8")
+
+for a in tweepy.Cursor(api.search_tweets,  
+              q="guncontrol OR gunviolence OR banguns OR gunsuck -filter:retweets",
+              #since="2007-10-18", 
+              tweet_mode = 'extended',
+              until="2022-10-19",
+              result_type="recent",
+              lang="en",
+              count=2000).items():
+   blob = textblob.TextBlob(a.full_text)
+   a1 = Tweet.Tweet(a.id, a.full_text, a.user.id, a.created_at, blob.polarity, blob.subjectivity)
+   mongo.ajoutBDD(a1.jsonified())
+   f.write(str(a1.jsonified()))
+   f.write("\n")
+f.close()
+
 """"
 -1 a -0.6 neg
 -0.59 a -0.2 myen neg
@@ -97,3 +118,5 @@ f.close()
 
 -0.1 a 0.1 informatif
 """ 
+
+mongo.ferme_db()
