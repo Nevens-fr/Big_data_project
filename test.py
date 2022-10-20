@@ -4,6 +4,7 @@ import textblob
 import codecs
 import Tweet
 import mongo
+import datetime
 
 mongo.init_co()
 #from textblob_fr import PatternTagger, PatternAnalyzer
@@ -60,7 +61,6 @@ if(None == re.search(mot+'$', fetched_tweets[0].full_text)):
 else:
    print("Ne fini pas par quoi")
 """
-print(len(fetched_tweets))
 
 f = codecs.open("resultats.txt", "w",  "utf-8")
 
@@ -95,17 +95,20 @@ f = codecs.open("resultats3.txt", "w",  "utf-8")
 
 for a in tweepy.Cursor(api.search_tweets,  
               q="guncontrol OR gunviolence OR banguns OR gunsuck -filter:retweets",
-              #since="2007-10-18", 
+              since="2022-10-19", 
               tweet_mode = 'extended',
-              until="2022-10-19",
+              #until="2022-10-19",
               result_type="recent",
               lang="en",
               count=2000).items():
    blob = textblob.TextBlob(a.full_text)
    a1 = Tweet.Tweet(a.id, a.full_text, a.user.id, a.created_at, blob.polarity, blob.subjectivity)
-   mongo.ajoutBDD(a1.jsonified())
-   f.write(str(a1.jsonified()))
-   f.write("\n")
+   if mongo.check_si_tweet_existe(a1.id, a1.user) == False:
+      a1.created_at = str(a1.created_at).split(" ",1)[0] #enlève les h:mm:ss
+      a1.created_at = datetime.datetime.strptime(str(a1.created_at), '%Y-%m-%d')
+      mongo.ajoutBDD(a1.jsonified())
+      f.write(str(a1.jsonified()))
+      f.write("\n")
 f.close()
 
 """"
@@ -114,7 +117,6 @@ f.close()
 -0.19 a 0.19 mitigé
 0.2 a 0.59 myen positif
 0.6 a 1 positiif
-
 
 -0.1 a 0.1 informatif
 """ 

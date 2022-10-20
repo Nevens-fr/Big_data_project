@@ -1,5 +1,3 @@
-import json
-
 
 class Tweet:
 
@@ -7,7 +5,7 @@ class Tweet:
         self.id = str(id)
         self.full_text = str(full_text)
         self.user = str(user)
-        self.created_at = str(created_at)
+        self.created_at = created_at
         self.polarity = str(polarity)
         self.subjectivity = str(subjectivity)
 

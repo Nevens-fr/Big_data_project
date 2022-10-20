@@ -1,7 +1,21 @@
 OK - stock les données dans mongoDB (skinner ? local nos machines ?)
 OK - sujet gun control ok
 OK - prendre des tweets tous les jours juqu'a soutenance pour faire un panel sur plusieurs mois
-AF - évite les doublons (utiliser les dates)
+OK - évite les doublons (utiliser les dates)
+OK - Récupérer une donnée
+OK - récupérer les données par jour
+OK - Qui héberge la BDD ? (aurélien en local pour le moment, export régulier pour save sur discord)
+
+
 AF - trouver les données à afficher / traitement des données
-AF - Qui héberge la BDD ?
-AF - Récupérer une donnée (convertir date en type date ?)
+AF - Faire l'interface pour l'affichage des datas avec graphs et tout le toutim
+AF - Ajouter des nouvelles colonnes (récupèrer les données pour les anciens tweets : https://stackoverflow.com/questions/28384588/twitter-api-get-tweets-with-specific-id api.get_status("1577271699782963202"))
+
+
+données à afficher :
+- volumétrie par jour / moyenne de tweet
+- afficher le tweet le plus positif et le plus négatif ?
+- afficher nb très positifs/moyen posit/neutre/moyen  neg/très négatif
+- graphe tweet positif par jour et negatif
+- graphe de la tendance des sentiments sur l'ensemble du corpus 
+- graphe des jours importants (nb de tweets très haut et graphe indicatif) concercant le controle des armes
