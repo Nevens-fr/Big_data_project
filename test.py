@@ -50,7 +50,7 @@ mot="#guncontrol"
 q = (mot)
 q +=  " -filter:retweets"
 count = 200
-fetched_tweets = api.search_tweets(q, count = count,lang="en",tweet_mode = 'extended',result_type="recent")
+#fetched_tweets = api.search_tweets(q, count = count,lang="en",tweet_mode = 'extended',result_type="recent")
 
 
 """regarde si un mot est a la fin du tweet
@@ -61,7 +61,7 @@ if(None == re.search(mot+'$', fetched_tweets[0].full_text)):
 else:
    print("Ne fini pas par quoi")
 """
-
+"""
 f = codecs.open("resultats.txt", "w",  "utf-8")
 
 i = 0
@@ -90,8 +90,9 @@ while i < len(fetched_tweets):
    i+=1
 
 f.close()
+"""
 
-f = codecs.open("resultats3.txt", "w",  "utf-8")
+#f = codecs.open("resultats3.txt", "w",  "utf-8")
 
 for a in tweepy.Cursor(api.search_tweets,  
               q="guncontrol OR gunviolence OR banguns OR gunsuck -filter:retweets",
@@ -107,9 +108,9 @@ for a in tweepy.Cursor(api.search_tweets,
       a1.created_at = str(a1.created_at).split(" ",1)[0] #enlève les h:mm:ss
       a1.created_at = datetime.datetime.strptime(str(a1.created_at), '%Y-%m-%d')
       mongo.ajoutBDD(a1.jsonified())
-      f.write(str(a1.jsonified()))
-      f.write("\n")
-f.close()
+      #f.write(str(a1.jsonified()))
+      #f.write("\n")
+#f.close()
 
 """"
 -1 a -0.6 neg

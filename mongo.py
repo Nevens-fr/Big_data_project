@@ -45,7 +45,6 @@ def retourne_entre_date(date, date2):
 
 def check_si_tweet_existe(id_t, id_u):
     jon_tutorial = tutorial.find_one({"id": id_t, "user" : id_u})
-    print(jon_tutorial)
     return jon_tutorial != None
 
 
