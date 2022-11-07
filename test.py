@@ -96,7 +96,7 @@ f.close()
 
 for a in tweepy.Cursor(api.search_tweets,  
               q="guncontrol OR gunviolence OR banguns OR gunsuck -filter:retweets",
-              since="2022-10-19", 
+              since="2022-11-03", 
               tweet_mode = 'extended',
               #until="2022-10-19",
               result_type="recent",
