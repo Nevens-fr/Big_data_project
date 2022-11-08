@@ -5,6 +5,7 @@ import codecs
 import Tweet
 import mongo
 import datetime
+from elasticsearch import Elasticsearch
 
 mongo.init_co()
 #from textblob_fr import PatternTagger, PatternAnalyzer
@@ -93,6 +94,7 @@ f.close()
 """
 
 #f = codecs.open("resultats3.txt", "w",  "utf-8")
+i = 0
 
 for a in tweepy.Cursor(api.search_tweets,  
               q="guncontrol OR gunviolence OR banguns OR gunsuck -filter:retweets",
@@ -105,21 +107,22 @@ for a in tweepy.Cursor(api.search_tweets,
    blob = textblob.TextBlob(a.full_text)
    a1 = Tweet.Tweet(a.id, a.full_text, a.user.id, a.created_at, blob.polarity, blob.subjectivity)
    if mongo.check_si_tweet_existe(a1.id, a1.user) == False:
+      i+=1
       a1.created_at = str(a1.created_at).split(" ",1)[0] #enlève les h:mm:ss
       a1.created_at = datetime.datetime.strptime(str(a1.created_at), '%Y-%m-%d')
       mongo.ajoutBDD(a1.jsonified())
       #f.write(str(a1.jsonified()))
       #f.write("\n")
 #f.close()
+print(i)
 
 """"
--1 a -0.6 neg
--0.59 a -0.2 myen neg
--0.19 a 0.19 mitigé
-0.2 a 0.59 myen positif
-0.6 a 1 positiif
+-1 a -0.6 très négatif
+-0.59 a -0.2 plutôt négatif
+-0.19 a 0.19 mitigé/informatif
+0.2 a 0.59 plutôt positif
+0.6 a 1 très positif
 
--0.1 a 0.1 informatif
 """ 
 
 mongo.ferme_db()

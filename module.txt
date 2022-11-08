@@ -1,6 +1,7 @@
 modules à intaller 
 
-import tweepy
-import textblob
-import TextBlob-fr
-import pymongo
+pip install tweepy
+pip install textblob
+pip install TextBlob-fr
+pip install pymongo
+pip install elasticsearch
