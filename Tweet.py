@@ -27,7 +27,7 @@ class Tweet:
         return {
             "id" : self.id,
             "full_text" : self.full_text ,
-            "created_at" : self.created_at ,
+            "created_at" : str(self.created_at) ,
             "polarity" : self.polarity ,
             "subjectivity" : self.subjectivity ,
             "user" : self.user,
@@ -51,9 +51,3 @@ class Tweet:
             elif key == "user" : self.user = value
             elif key == "_id" :self.mid = value
         self.sentiment = self.add_value()
-"""test
-t = Tweet()
-print(t.jsonified())
-print("")
-t.readData(t.jsonified())
-print(t.jsonified())"""

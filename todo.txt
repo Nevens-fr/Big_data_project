@@ -6,17 +6,17 @@ OK - Récupérer une donnée
 OK - récupérer les données par jour
 OK - Qui héberge la BDD ? (aurélien en local pour le moment, export régulier pour save sur discord)
 OK - retirer les écritures fichiers inutiles pour le moment
+OK - trouver les données à afficher / traitement des données
+OK - Faire l'interface pour l'affichage des datas avec graphs et tout le toutim
 
-
-AF - trouver les données à afficher / traitement des données
-AF - Faire l'interface pour l'affichage des datas avec graphs et tout le toutim
 AF - Ajouter des nouvelles colonnes (récupèrer les données pour les anciens tweets : https://stackoverflow.com/questions/28384588/twitter-api-get-tweets-with-specific-id api.get_status("1577271699782963202"))
-
+AF - Interpreter les données par rapport a des dates précises (exemple: elections)
 
 données à afficher :
-- volumétrie par jour / moyenne de tweet
-- afficher le tweet le plus positif et le plus négatif ?
-- afficher nb très positifs/moyen posit/neutre/moyen  neg/très négatif
-- graphe tweet positif par jour et negatif
-- graphe de la tendance des sentiments sur l'ensemble du corpus 
-- graphe des jours importants (nb de tweets très haut et graphe indicatif) concercant le controle des armes
+OK nb tweets total
+OK volumétrie par jour / moyenne de tweet
+OK afficher le tweet le plus positif et le plus négatif ?
+OK afficher nb très positifs/moyen posit/neutre/moyen  neg/très négatif
+OK graphe tweet positif par jour et negatif
+OK graphe de la tendance des sentiments sur l'ensemble du corpus 
+OK graphe des jours importants (nb de tweets très haut et graphe indicatif) concercant le controle des armes
