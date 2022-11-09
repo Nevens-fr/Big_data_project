@@ -29,6 +29,6 @@ for a in tweepy.Cursor(api.search_tweets,
       a1.created_at = str(datetime.datetime.strptime(str(a1.created_at), '%Y-%m-%d')).split(" 00:00:00", 1)[0]
       mongo.ajoutBDD(a1.jsonified())
 
-print("Nombre de nouveauw tweets trouvés : " + str(i))
+print("Nombre de nouveaux tweets trouvés : " + str(i))
 
 mongo.ferme_db()
