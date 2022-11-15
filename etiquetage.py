@@ -4,6 +4,8 @@
 
 import mongo
 
+##
+# Range des données issues des datas dans le dico spécifié entre lim - 20 et lim
 def rangeDonnees(dico, data, lim):
     i = lim - 20
 
@@ -14,6 +16,8 @@ def rangeDonnees(dico, data, lim):
         i+=1
     return dico
 
+##
+# créé un json à partir d'un nom, d'un id et d'une valeur
 def createJSON(nom, id, val):
     return {
         "nom" : nom,
