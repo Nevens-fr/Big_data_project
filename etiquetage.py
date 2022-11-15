@@ -30,13 +30,13 @@ mongo.init_co()
 
 f = open("etiquettage.txt", "r")
 
-aure = {}
-thom = {}
-axel = {}
-
 data = f.readlines()
 
 f.close()
+
+aure = {}
+thom = {}
+axel = {}
 
 aurelien = 20
 thomas = 40
