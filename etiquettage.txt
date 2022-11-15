@@ -1,0 +1,60 @@
+1 mitigé inf T
+2 mitigé informatif T
+3 mitigé informatif T
+4 mitigé informatif T
+5 négatif W
+6 mitigé informatif W
+7 mitigé informatif T
+8 négatif W
+9 mitigé informatif T
+10 mitigé informatif T
+11 négatif T
+12 négatif T
+13 négatif W
+14 négatif T
+15 mitigé informatif T
+16 négatif W
+17 négatif T
+18 mitigé informatif W
+19 négatif W
+20 très négatif T
+21 informatif T
+22 informatif W
+23 informatif T
+24 informatif T
+25 informatif T
+26 informatif T
+27 negatif W
+28 informatif T
+29 informatif W
+30 negatif T
+31 informatique T
+32 positif T
+33 informatif T
+34 informatif T
+35 informatif T
+36 informatif T
+37 informatif T
+38 negatif W
+39 negatif T
+40 negatif W
+41 Plutôt Positif T
+42 Plutôt négatif W
+43 Très positif    T
+44 Très négatif    T
+45 Plutôt négatif W
+46 Plutôt négatif T
+47 Plutôt négatif W
+48 Négatif W
+49 Très négatif T
+50 Négatif W
+51 Mitigé T
+52 Négatif W
+53 Négatif W
+54 Négatif T
+55 Informatif T
+56 Positif T
+57 Négatif T
+58 Informatif T
+59 Informatif T
+60 Négatif T

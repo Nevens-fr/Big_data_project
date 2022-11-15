@@ -1,3 +1,5 @@
+##
+# Ce module donne accès à une classe regroupant les données d'un tweet
 
 class Tweet:
 

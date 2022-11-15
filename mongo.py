@@ -1,3 +1,6 @@
+##
+# Ce module regroupe les fonctionnalités d'accès à Mongo DB
+
 from pydoc import cli
 from pymongo import MongoClient
 import pprint
@@ -6,27 +9,38 @@ import Tweet
 client = None
 db= None
 tutorial= None
+etiquetage = None
 
 
 def init_co():
-    global client,db, tutorial
+    global client,db, tutorial, etiquetage
     client = MongoClient(host="mongodb+srv://ThomasAurelienAxel:ThomasAurelienAxel@jouetclubcluster.eujzfbg.mongodb.net/")
     #client = MongoClient("mongodb://localhost:27017")
     db = client.rptutorials
     tutorial = db.tutorial
+    etiquetage = db.Etiquetage
 
 def ajoutBDD(tweet):
     global client,db, tutorial
     tutorial.insert_one(tweet)
 
+def ajoutBDD_eti(tweet):
+    global client,db, etiquetage
+    etiquetage.insert_one(tweet)
+
 def ferme_db():
-    global client,db, tutorial
+    global client,db, tutorial, etiquetage
     client.close()
 
 def returnCollection():
     global client,db, tutorial
     #sans argument, find retourne toute la collection
     return tutorial.find()
+
+def returnCollection_eti():
+    global client,db, etiquetage
+    #sans argument, find retourne toute la collection
+    return etiquetage.find()
 
 def retourne_un_pour_date(date):
     global client,db, tutorial

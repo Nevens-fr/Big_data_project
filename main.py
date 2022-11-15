@@ -1,3 +1,7 @@
+##
+# Ce module permet la recherche de nouveaux tweets
+# et leur insertion dans le référentiel mongo DB
+
 import tweepy
 import textblob
 import Tweet
